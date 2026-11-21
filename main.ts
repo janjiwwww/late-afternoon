@@ -2,14 +2,15 @@
 import { writeFileSync } from "node:fs";
 
 const TEXT =
-  `The kettle has gone quiet.
-Nothing is waiting on you to move.
-Under the flagstones, water that fell before
-there were eyes goes down through the chalk,
+  `Your mother is washing the last plates.
+She hums, and does not send you to bed.
+
+Under the yard that same water is going on
+without her, down through the chalk,
 a crack at a time, toward a sea
 it will not reach for a thousand years.
-It is carrying you along.
-There is nothing to fix.`;
+
+You are asleep before the tap stops.`;
 
 const dir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
 writeFileSync(`${dir}/entry.txt`, TEXT, { encoding: "utf8", mode: 0o666 });

@@ -2,12 +2,11 @@
 import { writeFileSync } from "node:fs";
 
 const TEXT =
-  `Late afternoon, and you are on a warm stone step with nowhere to be. ` +
-  `Inside, a kettle goes quiet on its own. The road climbs past the last lamp ` +
-  `into the hills, and the same wind that crossed this field this afternoon is ` +
-  `crossing somewhere you will never see.`;
+  `Somewhere under the street, water that fell before there were eyes is ` +
+  `going down through the chalk, one crack at a time. It will reach the sea ` +
+  `long after this page is closed. You are sitting on all that patience, ` +
+  `and it does not need you to notice.`;
 
 const dir = process.env.MAKEFUN_OUTPUT_DIR || "/output";
-const out = `${dir}/entry.txt`;
-writeFileSync(out, TEXT, { encoding: "utf8", mode: 0o666 });
-console.log(`${[...TEXT].length} code points written to ${out}`);
+writeFileSync(`${dir}/entry.txt`, TEXT, { encoding: "utf8", mode: 0o666 });
+console.log(`${[...TEXT].length} code points written`);
